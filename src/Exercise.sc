@@ -53,13 +53,22 @@ assert("123123"==m2,"This is not correct")
 
 /*Classes and Objects*/
 //Question 1
-//this is not correct
-object range1 {
-  def main(args: Range) {
-    val rangestep = args(2)-args(1)
-    println(rangestep)
 
-}
 val r = 1 to 10
-range1(r)
+println(r.step)
+val r2 = 1 to 10 by 2
+println(r2.step)
 
+object s1{
+  val name: String = "Sally"
+
+  def equals (arg1:String): Unit ={
+    if(name == arg1) "s1 and s2 are equal" else "s1 and s2 are not equal"
+  }
+}
+
+object s2{
+  val name: String = "Sally"
+}
+
+s1.equals(s2)
