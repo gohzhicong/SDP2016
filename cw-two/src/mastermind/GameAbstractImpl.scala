@@ -1,5 +1,9 @@
+package mastermind
+
 abstract class GameAbstractImpl extends Game {
   private var showCode: Boolean = false
+  override def maxLength: Int = 4
+  override def maxAttempts: Int = 12
 
   /**
     * Create a Game object.
@@ -13,4 +17,9 @@ abstract class GameAbstractImpl extends Game {
     this()
     showCode = easy
   }
+  /*
+  override def runGames: Unit ={
+    println("showCode="+showCode)
+  }
+*/
 }
