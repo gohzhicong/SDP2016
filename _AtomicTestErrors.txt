@@ -1,0 +1,22 @@
+Mostly Sunny[Error] expected:
+Partly Sunny
+Mostly Cloudy[Error] expected:
+Mostly Sunny
+Mostly Cloudy[Error] expected:
+Mostly Sunny
+Mostly Cloudy[Error] expected:
+Mostly Sunny
+Mostly Cloudy[Error] expected:
+Mostly Sunny
+Mostly Cloudy[Error] expected:
+Mostly Sunny
+Sunny[Error] expected:
+Mostly Sunny
+Sunny[Error] expected:
+Partly Sunny
+Sunny[Error] expected:
+Mostly Sunny
+Sunny[Error] expected:
+Cloudy
+Sunny[Error] expected:
+Unknown
