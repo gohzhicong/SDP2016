@@ -5,7 +5,7 @@ import scala.io.Source._
 
 trait Game {
   /**
-    * Run a one or more game sof mastermind, until the player
+    * Run a one or more game of mastermind, until the player
     * quits.
   */
   def maxLength:Int = 4
@@ -14,11 +14,11 @@ trait Game {
 
   def runGames
 
-  def outputMessage(message: String) ={
-  println(message)
+  def outputMessage(message: String) = {
+    println(message)
   }
 
-  def randomiser(inputs: String, outputs: Int): String ={
+  def randomiser(inputs: String, outputs: Int): String = {
     val r = scala.util.Random
     var outputString : String = ""
     for (i <- 1 to outputs){
@@ -27,6 +27,18 @@ trait Game {
       outputString = outputString+inputs.charAt(selectedIndex).toString
     }
     return outputString
+  }
+
+  def outputHistory(guessHistory: Array[String]): Unit = {
+    guessHistory.map(line => println(line))
+  }
+
+  def outputFinalHistory(guessHistory: Array[String], numberOfAttempts: Int): Unit = {
+    var i = 0
+    while (i <= numberOfAttempts) {
+      println(guessHistory(i))
+      i += 1
+    }
   }
 
   def prompt(promptMessage: String): String = {
