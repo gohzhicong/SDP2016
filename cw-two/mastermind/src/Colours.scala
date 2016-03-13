@@ -2,10 +2,10 @@ package mastermind
 
 import scala.collection.mutable.ListBuffer
 
-class Colours{
+class Colours {
   private val colourBank = "BGOPRY"
 
-  def allAvailableColours: String ={
+  def allAvailableColours: String = {
     colourBank
   }
 
@@ -13,11 +13,7 @@ class Colours{
     colourBank.contains(colourToBeCompared)
   }
 
-  /**
-    *
-    * six colors: blue, green , orange, purple, red, or yellow
-    */
-  def getColorName(c: Char): String = {
+  def getcolourName(c: Char): String = {
     c match {
       case 'B' => "blue"
       case 'G' => "green"
@@ -28,28 +24,28 @@ class Colours{
     }
   }
 
-  def getAllColors(): ListBuffer[String] = {
-    var colorArray = new ListBuffer[String]()
+  def getAllcolours: ListBuffer[String] = {
+    var colourArray = new ListBuffer[String]()
     for (c <- colourBank) {
-      colorArray += getColorName(c)
+      colourArray += getcolourName(c)
     }
-    colorArray
+    colourArray
   }
 
-  def getColorsAsString(): String = {
-    var colorMsg: String = colourBank.length + " colors: "
+  def getcoloursAsString: String = {
+    var colourMsg: String = ""
     var i = 0
-    for (c <- getAllColors()) {
+    for (c <- getAllcolours) {
       if (i == colourBank.length) {
-        colorMsg += "or "
+        colourMsg += "or "
       }
-      colorMsg += c
+      colourMsg += c
       if (i < colourBank.length - 1) {
-        colorMsg += ", "
+        colourMsg += ", "
       }
       i += 1
     }
-    colorMsg
+    colourMsg
   }
 }
 

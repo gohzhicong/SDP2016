@@ -11,10 +11,7 @@ trait Game {
   def maxLength:Int = 4
   def maxAttempts: Int = 12
   def runGames
-
-  def outputMessage(message: String) = {
-    println(message)
-  }
+  def showIntro
 
   def randomiser(inputs: String, outputs: Int): String = {
     val r = scala.util.Random
@@ -28,6 +25,7 @@ trait Game {
   }
 
   def outputHistory(guessHistory: Array[String]): Unit = {
+    println("")
     guessHistory.map(line => println(line))
   }
 
