@@ -10,8 +10,6 @@ trait Game {
   */
   def maxLength:Int = 4
   def maxAttempts: Int = 12
-
-
   def runGames
 
   def outputMessage(message: String) = {

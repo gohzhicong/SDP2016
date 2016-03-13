@@ -17,9 +17,4 @@ abstract class GameAbstractImpl extends Game {
     this()
     showCode = easy
   }
-  /*
-  override def runGames: Unit ={
-    println("showCode="+showCode)
-  }
-*/
 }
