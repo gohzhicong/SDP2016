@@ -3,13 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SDP2016.iml" filepath="$PROJECT_DIR$/SDP2016.iml" />
-      <module fileurl="file://$PROJECT_DIR$/exercises/Week 9/Week 9.iml" filepath="$PROJECT_DIR$/exercises/Week 9/Week 9.iml" />
       <module fileurl="file://$PROJECT_DIR$/exercises/Week4/Week4.iml" filepath="$PROJECT_DIR$/exercises/Week4/Week4.iml" />
       <module fileurl="file://$PROJECT_DIR$/exercises/Week6/Week6.iml" filepath="$PROJECT_DIR$/exercises/Week6/Week6.iml" />
       <module fileurl="file://$PROJECT_DIR$/cw-one/cw-one.iml" filepath="$PROJECT_DIR$/cw-one/cw-one.iml" />
       <module fileurl="file://$PROJECT_DIR$/cw-three/cw-three.iml" filepath="$PROJECT_DIR$/cw-three/cw-three.iml" />
-      <module fileurl="file://$PROJECT_DIR$/cw-two/cw-two.iml" filepath="$PROJECT_DIR$/cw-two/cw-two.iml" />
       <module fileurl="file://$PROJECT_DIR$/exercises/exercises.iml" filepath="$PROJECT_DIR$/exercises/exercises.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cw-two/mastermind/.idea/modules/mastermind.iml" filepath="$PROJECT_DIR$/cw-two/mastermind/.idea/modules/mastermind.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cw-two/mastermind/.idea/modules/mastermind-build.iml" filepath="$PROJECT_DIR$/cw-two/mastermind/.idea/modules/mastermind-build.iml" />
     </modules>
   </component>
 </project>
