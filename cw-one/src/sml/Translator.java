@@ -130,17 +130,15 @@ public class Translator {
 //                return new BnzInstruction(label, s1, L2);
         }
 */
-// new code should come here
+        // new code should come here
         //need to know which class it is
-        //need to then know what parameters need to be passed
-        //modify the parameters
         String ins2= "sml.";
         String ins3 = ins.substring(0, 1).toUpperCase() + ins.substring(1);
         String className = ins2+ins3+"Instruction";
-        System.out.println(className);
 
         Class instr = Class.forName(className);
 
+        //need to then know what parameters need to be passed
         Constructor[] constructors = instr.getDeclaredConstructors();
         Constructor ctor = null;
         for (int i = 0; i < constructors.length; i++) {
@@ -148,7 +146,7 @@ public class Translator {
             if (ctor.getGenericParameterTypes().length == 0)
                 break;
         }
-
+        //initialise the class
         Instruction output = null;
         try {
             if (ctor != null) {
@@ -158,7 +156,7 @@ public class Translator {
                     if(genericParameters[i]==int.class )
                         values[i]=0;//arbitrary
                     else if(genericParameters[i]==String.class)
-                        values[i]="a";//arbitrary
+                        values[i]=label;//arbitrary
                 }
 
                 output = (Instruction) ctor.newInstance(values);
@@ -166,13 +164,12 @@ public class Translator {
         } catch (InvocationTargetException e) {
              e.printStackTrace();
         }
-
+        //modify the parameters
         Field[] requiredFields = instr.getDeclaredFields();
         for(int i=0;i<requiredFields.length;++i) {
-            System.out.println(requiredFields[i].getName());
+
             Class requiredFieldClass = requiredFields[i].getType();
-            System.out.println(requiredFieldClass.toString());
-            System.out.println(int.class.toString());
+
             if(requiredFieldClass.equals(int.class)){
                 try {
                     requiredFields[i].setAccessible(true);
