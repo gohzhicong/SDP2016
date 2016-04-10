@@ -20,3 +20,9 @@ Sunny[Error] expected:
 Cloudy
 Sunny[Error] expected:
 Unknown
+Mostly Cloudy[Error] expected:
+Mostly Sunny
+Mostly Cloudy[Error] expected:
+Mostly Sunny
+Mostly Cloudy[Error] expected:
+Mostly Sunny
