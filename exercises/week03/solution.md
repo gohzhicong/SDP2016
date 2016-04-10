@@ -5,16 +5,13 @@
 //Week 3 Exercise
 //Short form Questions
 //question 1
-An abstract class would be more appropriate when there is a strong relationship between the abstract class and the classes that will derive from it. 
-Again, this is because an abstract class is very closely linked to inheritance, which implies a strong relationship. 
-But, with interfaces there need not be a strong relationship between the interface and the classes that implement the interface.
+An abstract class are related to the classes that will derive from it. 
+Interfaces do not have strong relationships with the classes that implement them.
 
-So, one major difference is that a Java class can inherit from only one abstract class, but can implement multiple interfaces.
+Java class can inherit only one abstract class, but can implement multiple interfaces.
 
-An abstract class may provide some methods with definitions – so an abstract class can have non-abstract methods with actual implementation details. 
-An abstract class can also have constructors and instance variables as well. 
-An interface, can not provide any method definitions – it can only provide method headings. 
-Any class that implements the interface is responsible for providing the method definition/implementation.
+Abstract class may provide some methods with definitions. 
+interface can only provide headings. 
 
 //question 2
 a) false. interface cannot have methods only method headings
