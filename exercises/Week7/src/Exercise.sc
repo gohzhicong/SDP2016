@@ -1,3 +1,4 @@
+
 import patternmatching.AtomicTest._
 
 //all code for exercises from week 7 found below
@@ -117,8 +118,33 @@ object Draw{
 
 sealed trait divisionResult
 
-object Divide{
-  def apply(i1: Int, i2: Int): Double={
-      i1/i2
+
+final case class Finite(value: Int) extends divisionResult
+
+final case object Infinite extends divisionResult
+
+object divide {
+  def apply(i1: Int, i2: Int) =
+    if (i2 == 0) Infinite else Finite(i1 / i2)
+}
+
+//question 8 in seperate file under LinkedList
+//question 9 is incomplete
+/*sealed trait Sum[A,B]{
+
+  def value: A ={
+    this match
+    case Left() => 1 + tail.length
+    case Right() => 0
   }
 }
+final case class Left[A,B](unknown: A) extends Sum[A,B]{
+
+}
+
+final case class Right[A,B](unknown: B) extends Sum[A,B]
+
+object Main extends App {
+  Left[Int, String](1).value
+  Right[Int, String]("foo").value
+}*/
