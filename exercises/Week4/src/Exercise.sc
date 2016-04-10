@@ -1,3 +1,5 @@
+//All code for week 4 exercises can be found here
+
 /*REPL*/
 val value =17
 val value2 = "ABCD1234"
@@ -196,4 +198,4 @@ vec4.min
 
 val myVector1 = Vector(1,2,3,4,5,6)
 val myVector2 = Vector(1,2,3,4,5,6)
-myVector1 is myVector2
+//myVector1 is myVector2
